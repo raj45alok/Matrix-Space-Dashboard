@@ -129,7 +129,7 @@ const Dashboard = () => {
         </Box>
       </Paper>
 
-      {/* Mission Overview Chips */}
+      
       <Box sx={{ mb: 4 }}>
         <Typography variant="h6" sx={{ mb: 2, color: '#64FFDA' }}>
           Mission Overview
@@ -142,7 +142,7 @@ const Dashboard = () => {
         </Stack>
       </Box>
 
-      {/* Mission Control Overview Panel */}
+      
       <Paper sx={{ 
         p: 3,
         mb: 4,
@@ -184,7 +184,7 @@ const Dashboard = () => {
         </Grid>
       </Paper>
 
-      {/* Control Panels Grid */}
+      
       <Grid container spacing={4} sx={{ mb: 4 }}>
         {controlPanels.map((panel, index) => (
           <Grid item xs={12} sm={6} md={3} key={index}>
@@ -245,7 +245,7 @@ const Dashboard = () => {
         ))}
       </Grid>
 
-  {/* Communication Signal Strength with Chart */}
+  
 <Paper sx={{ 
   p: 3,
   mb: 4,
@@ -285,7 +285,7 @@ const Dashboard = () => {
   </Box>
 </Paper>
 
-{/* Mission Status Distribution with Pie Chart */}
+
 <Paper sx={{ 
   p: 3,
   backgroundColor: '#112240'
