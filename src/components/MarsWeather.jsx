@@ -9,7 +9,7 @@ import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
 import ThermostatIcon from '@mui/icons-material/Thermostat';
 import CompressIcon from '@mui/icons-material/Compress';
 
-// Register ChartJS components
+
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
 const MarsWeather = () => {
@@ -24,7 +24,7 @@ const MarsWeather = () => {
   useEffect(() => {
     const fetchMarsWeather = async () => {
       try {
-        // Simulate data fetch
+        
         const simulatedData = generateSimulatedMarsWeather();
         setWeatherData(simulatedData);
         setChartData(simulatedData.chartData);
@@ -128,8 +128,6 @@ const MarsWeather = () => {
       <Typography variant="h5" gutterBottom sx={{ mb: 3 }}>
         Mars Weather Report
       </Typography>
-      
-      {/* Current Conditions - Only render if latestData exists */}
       {latestData && (
         <Paper elevation={3} sx={{ p: 2, mb: 3 }}>
           <Typography variant="h6" gutterBottom sx={{ display: 'flex', alignItems: 'center' }}>
@@ -177,8 +175,6 @@ const MarsWeather = () => {
           </Stack>
         </Paper>
       )}
-      
-      {/* Chart */}
       <Paper elevation={3} sx={{ p: 2, mb: 3 }}>
         <div style={{ height: '300px' }}>
           <Bar
@@ -199,8 +195,6 @@ const MarsWeather = () => {
           />
         </div>
       </Paper>
-      
-      {/* Additional Weather Data - Only render if we have data */}
       {weatherData.sol_keys && weatherData.sol_keys.length > 0 && (
         <Paper elevation={3} sx={{ p: 2 }}>
           <Typography variant="h6" gutterBottom>
