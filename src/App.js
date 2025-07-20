@@ -76,7 +76,7 @@ function App() {
       <GlobalStyles styles={globalStyles} />
       <Router>
         <Routes>
-          {/* Authentication Routes */}
+        
           <Route 
             path="/login" 
             element={
@@ -93,8 +93,6 @@ function App() {
                 <Signup setIsAuthenticated={setIsAuthenticated} />
             } 
           />
-          
-          {/* Main Dashboard */}
           <Route 
             path="/dashboard" 
             element={
@@ -103,8 +101,7 @@ function App() {
                 <Navigate to="/login" replace />
             } 
           />
-          
-          {/* Feature Routes */}
+        
           <Route 
             path="/iss-tracker" 
             element={
@@ -137,8 +134,7 @@ function App() {
                 <Navigate to="/login" replace />
             } 
           />
-          
-          {/* Default Route */}
+        
           <Route 
             path="/" 
             element={
