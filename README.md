@@ -14,7 +14,6 @@ https://matrix-space-dashboard.vercel.app/**
     * [Prerequisites](#prerequisites)
     * [Installation](#installation)
 * [Usage](#usage)
-* [Screenshots](#screenshots)
 * [Contributing](#contributing)
 * [License](#license)
 * [Contact](#contact)
