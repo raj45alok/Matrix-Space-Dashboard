@@ -9,7 +9,7 @@ import {
   Box, 
   Stack, 
   Divider,
-  CircularProgress  // Added missing import
+  CircularProgress  
 } from '@mui/material';
 import ThermostatIcon from '@mui/icons-material/Thermostat';
 import BatteryFullIcon from '@mui/icons-material/BatteryFull';
@@ -44,8 +44,6 @@ const SatelliteTelemetry = () => {
     const temperatures = [];
     const powerLevels = [];
     const signalStrengths = [];
-    
-    // Generate data for the last 10 minutes
     for (let i = 0; i < 10; i++) {
       const minutes = 44 + i;
       timestamps.push(`4:${minutes < 10 ? '0' + minutes : minutes}:30 PM`);
@@ -112,8 +110,6 @@ const SatelliteTelemetry = () => {
       <Typography variant="subtitle1" color="text.secondary" gutterBottom>
         Real-time telemetry data from satellite (simulated)
       </Typography>
-
-      {/* Current Status Chips */}
       {telemetryData?.current && (
         <Paper elevation={3} sx={{ p: 2, mb: 3 }}>
           <Stack direction="row" spacing={1} sx={{ flexWrap: 'wrap', gap: 1 }}>
@@ -144,8 +140,6 @@ const SatelliteTelemetry = () => {
           </Stack>
         </Paper>
       )}
-
-      {/* Telemetry Chart */}
       <Paper elevation={3} sx={{ p: 2, mb: 3, height: '300px' }}>
         <Line
           data={telemetryData?.chartData || { labels: [], datasets: [] }}
@@ -163,8 +157,6 @@ const SatelliteTelemetry = () => {
           }}
         />
       </Paper>
-
-      {/* Recent Data Table */}
       <Paper elevation={3} sx={{ p: 2 }}>
         <Typography variant="h6" gutterBottom sx={{ display: 'flex', alignItems: 'center' }}>
           <ScheduleIcon sx={{ mr: 1 }} /> Recent Telemetry Readings
