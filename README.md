@@ -3,7 +3,7 @@
 **project access link 
 https://matrix-space-dashboard.vercel.app/**
 
-![Login Page](assets/images/image_0e5215.png) [![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-blue?style=for-the-badge&logo=vercel)](https://matrix-space-dashboard.vercel.app/)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-blue?style=for-the-badge&logo=vercel)](https://matrix-space-dashboard.vercel.app/)
 
 ## Table of Contents
 
@@ -89,17 +89,6 @@ After installation, you can run the development server and access the dashboard:
 3.  Alternatively, you can access the live deployed version: [https://matrix-space-dashboard.vercel.app/](https://matrix-space-dashboard.vercel.app/)
 4.  Use the login page to access the main dashboard. Explore different mission reports and data visualizations by navigating through the various sections like Mars Weather, ISS Tracker, Satellite Net, and Asteroid Tracking.
 
-## Screenshots
-
-Here are some visual glimpses of the Matrix-Space-Dashboard in action:
-
-#### Login Page
-![Login Page](assets/images/image_0e5215.png) #### Main Dashboard Overview
-![Main Dashboard Overview](assets/images/Screenshot%20(10).png) #### Communication Signal Strength & Mission Status Distribution
-![Communication Signal Strength & Mission Status Distribution](assets/images/Screenshot%20(11).png) #### Mars Weather Report
-![Mars Weather Report](assets/images/Screenshot%202025-07-20%20164637.png) #### Satellite Telemetry Monitoring
-![Satellite Telemetry Monitoring](assets/images/Screenshot%202025-07-20%20165342.png) #### Near-Earth Asteroid Tracker
-![Near-Earth Asteroid Tracker](assets/images/Screenshot%202025-07-20%20165957.png) ## Contributing
 
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
