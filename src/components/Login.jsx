@@ -29,22 +29,16 @@ const Login = ({ setIsAuthenticated }) => {
     setIsLoading(true);
 
     try {
-      // Simulate API call - replace with actual authentication
+      
       await new Promise(resolve => setTimeout(resolve, 1000));
       
-      // Basic validation
+      
       if (!email || !password) {
         throw new Error('Please enter both email and password');
       }
-
-      // In a real app, you would call your authentication API here
-      // const response = await authApi.login(email, password);
-      
-      // For demo purposes, accept any non-empty credentials
       setIsAuthenticated(true);
       localStorage.setItem('isAuthenticated', 'true');
       
-      // Redirect to dashboard or previous location
       const from = location.state?.from?.pathname || '/dashboard';
       navigate(from, { replace: true });
     } catch (err) {
