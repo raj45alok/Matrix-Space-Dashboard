@@ -12,7 +12,7 @@ const AsteroidTracker = () => {
   useEffect(() => {
     const fetchAsteroids = async () => {
       try {
-        // Using NASA's NeoWs API
+        
         const today = new Date();
         const startDate = today.toISOString().split('T')[0];
         today.setDate(today.getDate() + 7);
@@ -22,7 +22,7 @@ const AsteroidTracker = () => {
           `https://api.nasa.gov/neo/rest/v1/feed?start_date=${startDate}&end_date=${endDate}&api_key=DEMO_KEY`
         );
         
-        // If API fails (common with demo key), use simulated data
+      
         if (response.data.near_earth_objects) {
           processAsteroidData(response.data.near_earth_objects);
         } else {
