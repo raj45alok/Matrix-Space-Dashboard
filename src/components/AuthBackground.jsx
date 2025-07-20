@@ -32,7 +32,7 @@ const AuthBackground = () => {
         },
       }}
     >
-      {/* Animated shooting stars */}
+      
       {[...Array(5)].map((_, i) => (
         <Box
           key={i}
