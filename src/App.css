@@ -1,7 +1,6 @@
-/* NASA Mission Control Dashboard Styles */
+
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap');
 
-/* Base Styles */
 body {
   margin: 0;
   font-family: 'Source Code Pro', monospace;
@@ -13,8 +12,6 @@ body {
 #root {
   min-height: 100vh;
 }
-
-/* Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -28,8 +25,6 @@ body {
   background: #64ffda;
   border-radius: 4px;
 }
-
-/* NASA Header */
 .nasa-header {
   font-weight: bold;
   letter-spacing: 1px;
@@ -38,14 +33,10 @@ body {
   -webkit-text-fill-color: transparent;
   margin-bottom: 0.5rem;
 }
-
-/* Dashboard Layout */
 .dashboard-container {
   padding: 2rem;
   background: linear-gradient(135deg, #0a192f 0%, #020c1b 100%);
 }
-
-/* Mission Control Cards */
 .mission-card {
   background-color: #112240;
   border-radius: 4px;
@@ -61,8 +52,6 @@ body {
   font-weight: 600;
   margin: 0.5rem 0;
 }
-
-/* Signal Strength Bars */
 .signal-bar {
   display: inline-block;
   width: 8px;
@@ -81,8 +70,6 @@ body {
 .signal-poor {
   background-color: #f44336;
 }
-
-/* Auth Pages */
 .auth-container {
   display: flex;
   justify-content: center;
@@ -100,8 +87,6 @@ body {
   max-width: 400px;
   border-top: 3px solid #64ffda;
 }
-
-/* Form Elements */
 .nasa-input .MuiOutlinedInput-root {
   color: #ccd6f6;
 }
@@ -125,8 +110,6 @@ body {
 .nasa-button:hover {
   background-color: #52d1b2 !important;
 }
-
-/* Status Indicators */
 .status-nominal {
   color: #4caf50;
 }
@@ -138,8 +121,6 @@ body {
 .status-critical {
   color: #f44336;
 }
-
-/* Animations */
 @keyframes pulse {
   0% { opacity: 0.6; }
   50% { opacity: 1; }
