@@ -1,38 +1,151 @@
-.App {
-  text-align: center;
-}
+/* NASA Mission Control Dashboard Styles */
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: 'Source Code Pro', monospace;
+  background-color: #0a192f;
+  color: #ccd6f6;
   min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a192f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #64ffda;
+  border-radius: 4px;
+}
+
+/* NASA Header */
+.nasa-header {
+  font-weight: bold;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, #64ffda 0%, #1e90ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.5rem;
+}
+
+/* Dashboard Layout */
+.dashboard-container {
+  padding: 2rem;
+  background: linear-gradient(135deg, #0a192f 0%, #020c1b 100%);
+}
+
+/* Mission Control Cards */
+.mission-card {
+  background-color: #112240;
+  border-radius: 4px;
+  padding: 1rem;
+  text-align: center;
+  border-left: 3px solid #64ffda;
+  margin-bottom: 1rem;
+}
+
+.mission-card-value {
+  color: #64ffda;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+
+/* Signal Strength Bars */
+.signal-bar {
+  display: inline-block;
+  width: 8px;
+  margin: 0 2px;
+  border-radius: 2px;
+}
+
+.signal-excellent {
+  background-color: #4caf50;
+}
+
+.signal-good {
+  background-color: #ffc107;
+}
+
+.signal-poor {
+  background-color: #f44336;
+}
+
+/* Auth Pages */
+.auth-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #0a192f;
+  padding: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.auth-paper {
+  background-color: #112240;
+  padding: 2rem;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 400px;
+  border-top: 3px solid #64ffda;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Form Elements */
+.nasa-input .MuiOutlinedInput-root {
+  color: #ccd6f6;
+}
+
+.nasa-input .MuiOutlinedInput-notchedOutline {
+  border-color: #8892b0;
+}
+
+.nasa-input .MuiInputLabel-root {
+  color: #8892b0;
+}
+
+.nasa-button {
+  background-color: #64ffda !important;
+  color: #0a192f !important;
+  font-weight: 600 !important;
+  margin-top: 1rem !important;
+  padding: 0.75rem !important;
+}
+
+.nasa-button:hover {
+  background-color: #52d1b2 !important;
+}
+
+/* Status Indicators */
+.status-nominal {
+  color: #4caf50;
+}
+
+.status-warning {
+  color: #ffc107;
+}
+
+.status-critical {
+  color: #f44336;
+}
+
+/* Animations */
+@keyframes pulse {
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+}
+
+.pulse {
+  animation: pulse 2s infinite;
 }
