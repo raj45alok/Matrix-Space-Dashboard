@@ -3,7 +3,7 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
-// Fix for Leaflet marker icons using direct URLs
+
 const icon = new L.Icon({
   iconUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png',
   iconRetinaUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon-2x.png',
@@ -41,7 +41,7 @@ const ISSTracker = () => {
         alignItems: 'center', 
         height: '100vh',
         fontFamily: 'Arial, sans-serif',
-        color: '#2c3e50' // Dark blue-gray for loading text
+        color: '#2c3e50' 
       }}>
         <h2>Loading ISS data...</h2>
       </div>
@@ -58,23 +58,23 @@ const ISSTracker = () => {
       <h1 style={{ 
         textAlign: 'center', 
         marginBottom: '20px', 
-        color: '#1a237e', // Dark blue for main heading
+        color: '#1a237e', 
         fontWeight: '600'
       }}>
         International Space Station Tracker
       </h1>
       
       <div style={{ 
-        backgroundColor: '#f8f9fa', // Light gray background
+        backgroundColor: '#f8f9fa', 
         padding: '20px', 
         borderRadius: '8px',
         marginBottom: '25px',
         boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
-        borderLeft: '4px solid #3f51b5' // Accent blue border
+        borderLeft: '4px solid #3f51b5' 
       }}>
         <h3 style={{ 
           marginTop: '0', 
-          color: '#3f51b5', // Medium blue for section heading
+          color: '#3f51b5', 
           marginBottom: '15px'
         }}>
           Current Position
@@ -82,9 +82,9 @@ const ISSTracker = () => {
         
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '15px' }}>
           <div style={{ minWidth: '200px' }}>
-            <p style={{ margin: '8px 0', color: '#424242' }}> {/* Dark gray for labels */}
-              <strong style={{ color: '#303f9f' }}>Latitude:</strong> {/* Darker blue for strong text */}
-              <span style={{ color: '#212121' }}> {issData.latitude.toFixed(4)}°</span> {/* Black for values */}
+            <p style={{ margin: '8px 0', color: '#424242' }}> 
+              <strong style={{ color: '#303f9f' }}>Latitude:</strong> 
+              <span style={{ color: '#212121' }}> {issData.latitude.toFixed(4)}°</span> 
             </p>
             <p style={{ margin: '8px 0', color: '#424242' }}>
               <strong style={{ color: '#303f9f' }}>Longitude:</strong>
@@ -105,7 +105,7 @@ const ISSTracker = () => {
         
         <p style={{ 
           margin: '15px 0 0 0', 
-          color: '#616161', // Medium gray for timestamp
+          color: '#616161', 
           fontSize: '0.9em',
           fontStyle: 'italic'
         }}>
@@ -145,7 +145,7 @@ const ISSTracker = () => {
       <div style={{ 
         marginTop: '20px',
         textAlign: 'center',
-        color: '#757575', // Medium gray for footer
+        color: '#757575', 
         fontSize: '0.85em'
       }}>
         <p>Data updates every 3 seconds | Source: wheretheiss.at</p>
