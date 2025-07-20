@@ -7,7 +7,7 @@ import {
   Grid, 
   Typography, 
   Container,
-  Box  // Make sure this is imported
+  Box  
 } from '@mui/material';
 import HowToRegIcon from '@mui/icons-material/HowToReg';
 import AuthLayout from './AuthLayout';
@@ -28,7 +28,6 @@ const Signup = ({ setIsAuthenticated }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add your signup logic here
     setIsAuthenticated(true);
     navigate('/dashboard');
   };
