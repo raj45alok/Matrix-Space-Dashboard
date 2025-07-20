@@ -18,7 +18,7 @@ https://matrix-space-dashboard.vercel.app/
 - **APIs**: [NASA Open APIs](https://api.nasa.gov/), [SpaceX API](https://docs.spacexdata.com)
 - **Hosting**: [Vercel](https://vercel.com)
 
-## 🚀 Setup & Deployment
+## Setup & Deployment
 
 ### Local Development
 1. Clone the repo:
