@@ -1,4 +1,4 @@
-/* Custom scrollbar */
+
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -16,8 +16,6 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #5c6bc0;
 }
-
-/* Leaflet map popup fixes */
 .leaflet-popup-content {
   margin: 10px !important;
 }
@@ -25,8 +23,6 @@
 .leaflet-popup-content p {
   margin: 5px 0 !important;
 }
-
-/* Chart.js tooltip fixes */
 .chartjs-tooltip {
   opacity: 1 !important;
   position: absolute;
@@ -40,8 +36,6 @@
   transform: translate(-50%, 0);
   padding: 8px !important;
 }
-
-/* MUI DataGrid fixes */
 .MuiDataGrid-root .MuiDataGrid-cell:focus {
   outline: none !important;
 }
